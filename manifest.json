@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "WebSafely - Scam Website Checker",
+  "version": "1.0",
+  "description": "Check scam scores for websites you visit. Scores are fetched from websafely.net. If website is not present in database, its added to the scan queue.",
+  "permissions": [
+    "tabs",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://websafely.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+} 
